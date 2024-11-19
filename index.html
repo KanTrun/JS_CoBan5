@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Selector -->
+    <style>
+        .title {
+            color: orange;
+        }
+
+        #menu li a {
+            color: red;
+        }
+
+    
+        #menu2 li a.one {
+            color: green;
+        }
+
+        /* dùng để lấy ra vị trí mong muốn: nth-child() */
+        #menu2 li:nth-child(3) a {
+            color: pink;
+        }
+
+        .test01 {
+            color: red;
+        }
+
+        .test02 {
+            color: green;
+        }
+
+        .adsNone {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            display: none;
+        }
+
+        .adsApp {
+            display: block;
+        }
+
+        .adsTop {
+            position: fixed;
+            top: 0;
+            right: 0;
+            display: none;
+        }
+
+        .adsT {
+            display: block;
+        }
+
+    </style>
+    
+    <div id="ads1" class="adsNone">
+        <a href="#" target="_blank">
+            <img src="https://cdn11.dienmaycholon.vn/filewebdmclnew/DMCL21/Picture/News/News_expe_12307/12307.png?version=172240" alt="" 
+            width="400px"/>
+        </a>
+    </div>
+
+    <div id="ads2" class="adsNone">
+        <a href="#" target="_blank">
+            <img src="https://footgearh.vn/thumbs/500x500x2/upload/product/z5771949572645b7485af4d9249e54fafed31fb53c8821-8754.jpg" alt=""
+            width="400px"/>
+        </a>
+    </div>
+
+    <h2 id="h2-01" class="test01"><b>Kan Trun 01</b></h2>
+    <h2 id="h2-02">Sieu Sao 02</h2>
+    <h2 id="h2-03" class="title">Tinh Tu 03</h2>
+
+    <h3 class="title">Ngôi nhà</h3>
+    <h4 class="title">Cái cây chổi</h4>
+
+    <ul id="menu">
+        <li>
+            <a href="a">Muc 1</a>
+        </li>
+        <li>
+            <a href="a">Muc 2</a>
+        </li>
+        <li>
+            <a href="a">Muc 3</a>
+        </li>
+    </ul>
+
+    <ul id="menu2">
+        <li>
+            <a href="a" class="one">Muc 1</a>
+        </li>
+        <li>
+            <a href="a">Muc 2</a>
+        </li>
+        <li>
+            <a href="a">Muc 3</a>
+        </li>
+    </ul>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
